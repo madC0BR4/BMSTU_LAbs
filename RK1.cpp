@@ -62,6 +62,11 @@ int main(){
     for (int i=0; i<size; i++) {
         cout<<"Задача "<<i+1<<": "<<point[i]<<". Приоритет: "<<priority[i]<<". Срок выполнения: "<<deadline[i]<<". "<<endl;
     }
+
+    delete[] priority;
+    delete[] deadline;
+    delete[] point;
+    
     return 0;
 
 }
