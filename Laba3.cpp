@@ -15,7 +15,7 @@ void addProductToFile(const Product& product) {
     if (outFile.is_open()) {
         outFile << product.name << "," << product.cost << "," << product.count << endl;
         outFile.close();
-        cout << "Студент успешно добавлен!" << endl;
+        cout << "Продукт успешно добавлен!" << endl;
     } else {
         cerr << "Не удалось открыть файл для записи." << endl;
     }
