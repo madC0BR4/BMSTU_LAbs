@@ -68,10 +68,9 @@ void UpdateObj(MusicalInstrument* ptr) {
 
 int main() {
     vector<MusicalInstrument*> vec;
-    vec.resize(3);
-    vec[0] = new MusicalInstrument("Drums", "Metal");
-    vec[1] = new StringInstrument("Guitar", "rosewood", 6);
-    vec[2] = new BrassInstrument("Saxophone", "brass", "strong");
+    vec.push_back(new MusicalInstrument("Drums", "Metal"));
+    vec.push_back(new StringInstrument("Guitar", "rosewood", 6));
+    vec.push_back(new BrassInstrument("Saxophone", "brass", "strong"));
 
     for (const auto i: vec) {
         cout << "Instrument: " << endl;
